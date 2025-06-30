@@ -7,6 +7,7 @@ This repository contains the solution for the third day's problem of the IOAI TS
 ## Table of Contents
 
   - [Problem Description](https://www.google.com/search?q=%23problem-description)
+  - [Evaluation Metric](https://www.google.com/search?q=%23evaluation-metric)
   - [Solution Overview](https://www.google.com/search?q=%23solution-overview)
   - [Code Description](https://www.google.com/search?q=%23code-description)
   - [Dependencies](https://www.google.com/search?q=%23dependencies)
@@ -15,6 +16,12 @@ This repository contains the solution for the third day's problem of the IOAI TS
 ## Problem Description
 
 The challenge involved analyzing code snippets and assigning them a difficulty label (easy, medium, or hard). This is a multi-class text classification problem where the "text" is source code.
+
+## Evaluation Metric
+
+The primary evaluation metric for this competition was the **F1-score**.
+
+Our solution achieved an **F1-score of 0.37750**.
 
 ## Solution Overview
 
@@ -75,7 +82,7 @@ The provided Python script `batyr-yerdenov-3.ipynb` details the implementation:
 
   * **Prediction on Test Set:**
 
-      * Applies the same preprocessing and feature extraction steps to the `test` DataFrame.
+      * Performs the same preprocessing and feature extraction steps on the `test` DataFrame.
       * Uses the trained LightGBM model to predict `difficulty` for the test set.
 
   * **Submission Generation:**
